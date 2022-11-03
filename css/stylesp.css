@@ -88,11 +88,12 @@ img {
     padding-right: 15px;
 
     /* outline: 2px solid tomato; */
-} */
 .container-team {
     background-color: #F5F4FA;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;   
     /* padding-top: 94px;
     padding-bottom: 94px; */
     /* outline: 2px solid tomato; */
@@ -120,14 +121,19 @@ img {
 }
 .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+.section {
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--address-text-color);
 }
 .section-work {
     display: flex;
@@ -174,10 +180,17 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
+.container-photos {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid tomato;
+    background-color: tomato; */
+}
 .container-buttom {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid tomato; */
@@ -185,13 +198,14 @@ img {
 .page-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--address-text-color);
-    width: 1200px;
     border-bottom: 1px solid #ECECEC;
 
 }
 .site {
     display: flex;
+    align-items: center;
     margin-left: 93px;
 }
 .nav-item {
@@ -342,7 +356,7 @@ img {
     color: var(--address-text-color);
     background-color: var(--website-color);
     padding: 10px 32px;
-
+    align-items: center;
     min-width: 216px;
     height: 50px;
     margin-bottom: 30px;
@@ -455,13 +469,11 @@ footer {
   0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .photo-description {
     display: flex;
     flex-wrap: wrap;
+
     gap: 30px;
     margin-left: 0px;
     margin-right: 0px;
@@ -474,9 +486,10 @@ footer {
 }
 .button-list {
     display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     gap: 8px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .photo-cards {
     border: 1px solid #EEEEEE;
@@ -485,9 +498,6 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/* .section-work {
-    padding: 94px;
-} */
 .list .current{
     color: #ffffff;
 }
